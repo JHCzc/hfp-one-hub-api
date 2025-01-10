@@ -5,7 +5,7 @@ const path = require("path");
 
 // SMTP transporter without authentication
 const transporter = nodemailer.createTransport({
-  host: process.env.host, // Replace with your SMTP server's hostname
+  host: process.env.smtp, // Replace with your SMTP server's hostname
   port: 587, // Common port for unauthenticated SMTP
   secure: false, // Set to true if using port 465 with SSL
   auth: {
